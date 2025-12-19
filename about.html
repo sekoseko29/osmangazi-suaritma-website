@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about JSU - a leading water purification company in Bursa with 15+ years of experience providing clean and safe drinking water solutions.">
+    <meta name="keywords" content="water purification, drinking water, water treatment, Bursa, water solutions, water company">
+    <meta name="author" content="JSU Water Purification">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="About JSU - Leading Water Purification Company in Bursa">
+    <meta property="og:description" content="Discover JSU's commitment to providing clean and safe drinking water solutions with 15+ years of experience in water purification.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://osmangazi-suaritma.com/about.html">
+    <meta property="og:image" content="https://osmangazi-suaritma.com/images/jsu-logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="About JSU - Leading Water Purification Company in Bursa">
+    <meta name="twitter:description" content="Discover JSU's commitment to providing clean and safe drinking water solutions with 15+ years of experience.">
+    <meta name="twitter:image" content="https://osmangazi-suaritma.com/images/jsu-logo.png">
+    <meta name="canonical" content="https://osmangazi-suaritma.com/about.html">
+    <title>About JSU | Leading Water Purification Company in Bursa</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        nav {
+            background-color: #f1f1f1;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        nav ul li {
+            margin: 0 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #1e3c72;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #2a5298;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        section h2 {
+            color: #1e3c72;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #2a5298;
+            padding-bottom: 10px;
+        }
+        
+        section h3 {
+            color: #2a5298;
+            font-size: 1.4rem;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+        
+        .highlight {
+            background-color: #e8f4f8;
+            padding: 20px;
+            border-left: 4px solid #2a5298;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        
+        .team-member {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .team-member h4 {
+            color: #1e3c72;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+        
+        .team-member .position {
+            color: #2a5298;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        
+        .team-member .description {
+            font-size: 0.95rem;
+            color: #555;
+            line-height: 1.5;
+        }
+        
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+        
+        .expertise-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .expertise-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+        
+        .expertise-item p {
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .stat-box {
+            background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .stat-box .number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .stat-box .label {
+            font-size: 1rem;
+        }
+        
+        footer {
+            background-color: #1e3c72;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+        
+        footer p {
+            margin: 5px 0;
+        }
+        
+        .breadcrumb {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        .breadcrumb a {
+            color: #2a5298;
+            text-decoration: none;
+        }
+        
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            section {
+                padding: 20px;
+            }
+            
+            .team-grid, .expertise-grid, .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About JSU</h1>
+        <p>Your Trusted Water Purification Partner in Bursa</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="breadcrumb">
+            <a href="index.html">Home</a> / <span>About Us</span>
+        </div>
+        
+        <!-- Company History Section -->
+        <section itemscope itemtype="https://schema.org/Organization">
+            <h2>Our Company History</h2>
+            <p itemscope>
+                <strong itemscope itemtype="https://schema.org/Organization">
+                    <span itemprop="name">JSU</span> is a leading water purification company in Bursa with 15+ years of experience
+                </strong>
+                delivering high-quality water treatment solutions to families and businesses across the region. Since our inception, we have been committed to revolutionizing the way people access clean, safe, and healthy drinking water.
+            </p>
+            <p>
+                Over the past 15 years, JSU has grown from a small local water treatment business to become the most recognized and trusted water purification provider in Bursa. Our journey has been marked by continuous innovation, investment in cutting-edge technology, and an unwavering commitment to customer satisfaction. We've served thousands of satisfied customers and established ourselves as industry leaders in water purification solutions.
+            </p>
+            <div class="highlight">
+                <strong>Our Foundation:</strong> JSU was founded on the belief that access to clean drinking water is a fundamental right. We started with a simple mission to provide affordable, reliable water purification solutions to the Bursa community and have since expanded our reach to surrounding regions.
+            </div>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="number">15+</div>
+                    <div class="label">Years of Experience</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">5000+</div>
+                    <div class="label">Happy Customers</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">100%</div>
+                    <div class="label">Customer Satisfaction</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">24/7</div>
+                    <div class="label">Customer Support</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Mission Statement -->
+        <section itemscope itemtype="https://schema.org/LocalBusiness">
+            <h2>Our Mission</h2>
+            <div class="highlight" itemprop="description">
+                <h3>Mission Statement</h3>
+                <p>
+                    <strong>To provide clean and safe drinking water solutions to families and businesses</strong> through innovative water purification technologies, exceptional customer service, and sustainable practices that protect our environment for future generations.
+                </p>
+            </div>
+            <p>
+                Our mission drives every decision we make at JSU. We are dedicated to:
+            </p>
+            <ul style="margin-left: 20px; margin-top: 15px;">
+                <li style="margin-bottom: 10px;">Delivering superior water purification systems that meet international quality standards</li>
+                <li style="margin-bottom: 10px;">Providing affordable pricing without compromising on quality or service</li>
+                <li style="margin-bottom: 10px;">Offering comprehensive support and maintenance services to all our customers</li>
+                <li style="margin-bottom: 10px;">Continuously improving our products and services based on customer feedback</li>
+                <li style="margin-bottom: 10px;">Promoting awareness about water quality and the importance of water purification</li>
+            </ul>
+        </section>
+        
+        <!-- Vision Statement -->
+        <section>
+            <h2>Our Vision</h2>
+            <div class="highlight">
+                <h3>Vision Statement</h3>
+                <p>
+                    <strong>To be the most trusted water purification provider in Bursa and surrounding regions</strong>, recognized for our commitment to excellence, innovation, and environmental responsibility. We envision a future where every family and business has access to pure, safe, and healthy drinking water.
+                </p>
+            </div>
+            <p>
+                We strive to achieve this vision by:
+            </p>
+            <ul style="margin-left: 20px; margin-top: 15px;">
+                <li style="margin-bottom: 10px;">Expanding our product range to serve diverse customer needs</li>
+                <li style="margin-bottom: 10px;">Investing in research and development for next-generation water purification technologies</li>
+                <li style="margin-bottom: 10px;">Building long-term partnerships with customers based on trust and reliability</li>
+                <li style="margin-bottom: 10px;">Contributing to environmental conservation and sustainability initiatives</li>
+                <li style="margin-bottom: 10px;">Becoming a role model for the water purification industry in Turkey</li>
+            </ul>
+        </section>
+        
+        <!-- Team Information Section -->
+        <section>
+            <h2>Our Expert Team</h2>
+            <p>
+                At JSU, our strength lies in our team of experienced professionals dedicated to delivering exceptional water purification solutions. Our team comprises engineers, technicians, and customer service specialists who are passionate about water quality and environmental protection.
+            </p>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h4>Ayşe Yilmaz</h4>
+                    <div class="position">Founder & CEO</div>
+                    <div class="description">
+                        With over 20 years of experience in water treatment technology, Ayşe founded JSU with a vision to revolutionize water purification in Bursa. Her leadership has made JSU the region's most trusted water solution provider.
+                    </div>
+                </div>
+                <div class="team-member">
+                    <h4>Mehmet Demir</h4>
+                    <div class="position">Chief Technical Officer</div>
+                    <div class="description">
+                        Mehmet brings 18 years of technical expertise in water purification systems. He oversees product development and ensures all JSU solutions meet the highest quality and safety standards.
+                    </div>
+                </div>
+                <div class="team-member">
+                    <h4>Fatih Kaya</h4>
+                    <div class="position">Operations Manager</div>
+                    <div class="description">
+                        With a background in industrial engineering, Fatih manages all operational aspects of JSU. He ensures timely delivery, installation, and maintenance of water purification systems across Bursa.
+                    </div>
+                </div>
+                <div class="team-member">
+                    <h4>Zeynep Arslan</h4>
+                    <div class="position">Customer Service Director</div>
+                    <div class="description">
+                        Zeynep leads our customer support team and ensures every customer receives prompt, professional service. She has built our reputation for excellence in customer care.
+                    </div>
+                </div>
+                <div class="team-member">
+                    <h4>Kadir Bulut</h4>
+                    <div class="position">Senior Installation Technician</div>
+                    <div class="description">
+                        Kadir has 12 years of experience in water system installation and maintenance. He ensures all JSU systems are properly installed and optimized for peak performance.
+                    </div>
+                </div>
+                <div class="team-member">
+                    <h4>Elif Şahin</h4>
+                    <div class="position">Quality Assurance Specialist</div>
+                    <div class="description">
+                        Elif ensures that every water purification system meets our strict quality standards before reaching customers. Her attention to detail maintains JSU's reputation for excellence.
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Expertise Highlights Section -->
+        <section>
+            <h2>Our Expertise & Specializations</h2>
+            <p>
+                JSU specializes in a wide range of water purification technologies and services tailored to meet the diverse needs of residential and commercial clients in Bursa and beyond.
+            </p>
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <h4>🔬 Advanced Filtration Systems</h4>
+                    <p>
+                        State-of-the-art multi-stage filtration technology that removes impurities, contaminants, and harmful substances from water at the molecular level.
+                    </p>
+                </div>
+                <div class="expertise-item">
+                    <h4>💧 Reverse Osmosis Treatment</h4>
+                    <p>
+                        Cutting-edge reverse osmosis systems that provide the purest drinking water possible, ideal for families and commercial establishments.
+                    </p>
+                </div>
+                <div class="expertise-item">
+                    <h4>🧪 Water Quality Testing</h4>
+                    <p>
+                        Comprehensive water analysis and testing services to identify contaminants and recommend customized purification solutions for your specific needs.
+                    </p>
+                </div>
+                <div class="expertise-item">
+                    <h4>🔧 Installation & Maintenance</h4>
+                    <p>
+                        Professional installation, regular maintenance, and prompt repair services ensure your water purification system operates at peak efficiency.
+                    </p>
+                </div>
+                <div class="expertise-item">
+                    <h4>🌍 Eco-Friendly Solutions</h4>
+                    <p>
+                        Sustainable water purification systems with minimal environmental impact, reducing waste and promoting conservation of water resources.
+                    </p>
+                </div>
+                <div class="expertise-item">
+                    <h4>📞 24/7 Customer Support</h4>
+                    <p>
+                        Round-the-clock customer service and emergency support ensure you always have assistance when you need it, any time of day or night.
+                    </p>
+                </div>
+            </div>
+            <h3>Why Choose JSU?</h3>
+            <ul style="margin-left: 20px; margin-top: 15px;">
+                <li style="margin-bottom: 10px;">✓ <strong>15+ Years of Experience:</strong> Proven track record of excellence in water purification</li>
+                <li style="margin-bottom: 10px;">✓ <strong>Certified & Compliant:</strong> All systems meet international quality and safety standards</li>
+                <li style="margin-bottom: 10px;">✓ <strong>Affordable Pricing:</strong> Competitive rates without compromising on quality</li>
+                <li style="margin-bottom: 10px;">✓ <strong>Expert Team:</strong> Experienced professionals dedicated to your water quality needs</li>
+                <li style="margin-bottom: 10px;">✓ <strong>Warranty & Guarantees:</strong> Comprehensive warranties on all products and services</li>
+                <li style="margin-bottom: 10px;">✓ <strong>Customer-Centric Approach:</strong> Your satisfaction is our top priority</li>
+            </ul>
+        </section>
+        
+        <!-- Call to Action -->
+        <section style="background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%); color: white; text-align: center;">
+            <h2 style="color: white; border-bottom-color: white;">Get Your Pure Water Solution Today</h2>
+            <p style="font-size: 1.1rem; margin: 20px 0;">
+                Contact JSU today to learn how we can provide you with clean, safe, and healthy drinking water. Our team is ready to assess your water needs and recommend the perfect solution.
+            </p>
+            <div style="margin-top: 20px;">
+                <a href="contact.html" style="display: inline-block; background-color: white; color: #1e3c72; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-right: 15px; transition: transform 0.3s;">Contact Us</a>
+                <a href="products.html" style="display: inline-block; background-color: rgba(255,255,255,0.2); color: white; padding: 12px 30px; border-radius: 5px; text-decoration: none; font-weight: bold; transition: background-color 0.3s;">View Our Products</a>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 JSU Water Purification Company. All rights reserved.</p>
+        <p>Professional Water Treatment Solutions | Bursa, Turkey</p>
+        <p>Email: <a href="mailto:info@osmangazi-suaritma.com" style="color: #a8d8ff;">info@osmangazi-suaritma.com</a> | Phone: <a href="tel:+902242000000" style="color: #a8d8ff;">+90 224 2000 000</a></p>
+    </footer>
+</body>
+</html>
