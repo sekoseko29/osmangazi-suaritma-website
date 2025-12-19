@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequently asked questions about water purification systems, filters, reverse osmosis, installation, warranty, and maintenance.">
+    <meta name="keywords" content="water purification, FAQ, water filters, reverse osmosis, installation service, warranty, water treatment">
+    <meta name="author" content="Osmangazi Suarıtma">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="FAQ - Water Purification Systems">
+    <meta property="og:description" content="Find answers to frequently asked questions about water purification systems and services.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="FAQ - Water Purification Systems">
+    <meta name="twitter:description" content="Find answers to frequently asked questions about water purification systems and services.">
+    <title>FAQ - Water Purification Systems | Osmangazi Suarıtma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0066cc 0%, #0052a3 100%);
+            color: white;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+
+        .faq-intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .faq-intro p {
+            font-size: 1.05rem;
+            color: #555;
+        }
+
+        .accordion-container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .accordion-item {
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .accordion-item:last-child {
+            border-bottom: none;
+        }
+
+        .accordion-button {
+            width: 100%;
+            padding: 1.5rem;
+            background: white;
+            border: none;
+            text-align: left;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #0066cc;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion-button:hover {
+            background-color: #f9f9f9;
+            color: #0052a3;
+        }
+
+        .accordion-button.active {
+            background-color: #e6f0ff;
+            color: #0052a3;
+        }
+
+        .accordion-icon {
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+            color: #0066cc;
+        }
+
+        .accordion-button.active .accordion-icon {
+            transform: rotate(180deg);
+        }
+
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            background-color: #fafafa;
+        }
+
+        .accordion-item.active .accordion-content {
+            max-height: 500px;
+        }
+
+        .accordion-text {
+            padding: 1.5rem;
+            color: #555;
+            line-height: 1.8;
+            font-size: 1rem;
+        }
+
+        .accordion-text p {
+            margin-bottom: 1rem;
+        }
+
+        .accordion-text ul {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .accordion-text li {
+            margin-bottom: 0.5rem;
+        }
+
+        .accordion-text strong {
+            color: #0066cc;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .accordion-button {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+
+            .accordion-text {
+                padding: 1rem;
+            }
+        }
+
+        .back-to-top {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #0066cc;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 100;
+            font-size: 1.5rem;
+            border: none;
+            transition: background 0.3s ease;
+        }
+
+        .back-to-top:hover {
+            background: #0052a3;
+        }
+
+        .back-to-top.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <p>Find answers to common questions about our water purification systems and services</p>
+    </header>
+
+    <div class="container">
+        <div class="faq-intro">
+            <p>We understand that choosing the right water purification system can be overwhelming. Here are answers to questions our customers frequently ask. If you don't find your answer here, please feel free to contact us.</p>
+        </div>
+
+        <div class="accordion-container">
+            <!-- Question 1 -->
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">
+                    <span>How often should I change water filters?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        <p>The frequency of filter changes depends on several factors, including:</p>
+                        <ul>
+                            <li><strong>Water quality:</strong> Poor quality water requires more frequent changes</li>
+                            <li><strong>System type:</strong> Different systems have different recommendations</li>
+                            <li><strong>Usage:</strong> Higher water consumption means filters need changing sooner</li>
+                            <li><strong>Filter type:</strong> Sediment filters typically last 6-12 months, while carbon filters last 12-24 months</li>
+                        </ul>
+                        <p>As a general guideline, we recommend changing filters <strong>every 6 to 12 months</strong>. We provide filter replacement kits and can help you determine the best schedule for your specific system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">
+                    <span>What is reverse osmosis?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        <p><strong>Reverse osmosis (RO)</strong> is a water purification technology that uses a semipermeable membrane to remove ions, unwanted molecules, and larger particles from water.</p>
+                        <p>Here's how it works:</p>
+                        <ul>
+                            <li>Water is forced through a membrane with microscopic pores (0.0001 microns)</li>
+                            <li>Contaminants larger than water molecules are filtered out</li>
+                            <li>The result is ultra-pure water with up to 99% of impurities removed</li>
+                        </ul>
+                        <p><strong>Benefits:</strong></p>
+                        <ul>
+                            <li>Removes bacteria, viruses, and dissolved minerals</li>
+                            <li>Improves taste and odor of water</li>
+                            <li>Reduces salt, fluoride, and other harmful substances</li>
+                            <li>Cost-effective compared to bottled water</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">
+                    <span>Do you offer installation service?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        <p><strong>Yes, we provide professional installation services!</strong></p>
+                        <p>Our experienced technicians can install your water purification system at your home or business. Installation includes:</p>
+                        <ul>
+                            <li>System inspection and assessment of your water supply</li>
+                            <li>Proper installation according to manufacturer specifications</li>
+                            <li>Connection to your existing plumbing</li>
+                            <li>Testing to ensure proper operation</li>
+                            <li>User training on system operation and maintenance</li>
+                        </ul>
+                        <p>Installation fees vary based on system complexity. <strong>Contact us for a free consultation and installation quote.</strong> We offer flexible scheduling and can often install systems within 24-48 hours of purchase.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">
+                    <span>What is your warranty period?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        <p>We stand behind the quality of our products with comprehensive warranties:</p>
+                        <ul>
+                            <li><strong>System Components:</strong> 2-5 years depending on product category</li>
+                            <li><strong>Membrane:</strong> 3-5 years against manufacturing defects</li>
+                            <li><strong>Filters:</strong> Covered under warranty for the first set</li>
+                            <li><strong>Labor:</strong> 1 year on installation services</li>
+                        </ul>
+                        <p><strong>Warranty Coverage Includes:</strong></p>
+                        <ul>
+                            <li>Manufacturing defects and workmanship</li>
+                            <li>Replacement parts and labor</li>
+                            <li>Free maintenance checks during warranty period</li>
+                        </ul>
+                        <p>Extended warranty options are also available. Please refer to your product documentation or contact us for specific warranty details for your system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">
+                    <span>How much does water purification cost?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        <p>Water purification system costs vary based on type, capacity, and features:</p>
+                        <ul>
+                            <li><strong>Point-of-Use (Under-sink):</strong> $300 - $800</li>
+                            <li><strong>Whole-House Systems:</strong> $1,500 - $5,000+</li>
+                            <li><strong>Countertop Filters:</strong> $100 - $400</li>
+                            <li><strong>Pitcher Filters:</strong> $25 - $100</li>
+                        </ul>
+                        <p><strong>Additional Costs to Consider:</strong></p>
+                        <ul>
+                            <li>Installation: $200 - $1,000 depending on complexity</li>
+                            <li>Filter replacements: $50 - $200 per set, every 6-12 months</li>
+                            <li>Maintenance: Annual inspection typically $50 - $150</li>
+                        </ul>
+                        <p>We offer flexible payment plans and financing options. <strong>Request a quote today</strong> to get pricing tailored to your specific needs and water quality requirements.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">
+                    <span>Do you provide emergency service?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        <p><strong>Yes, we offer emergency service!</strong></p>
+                        <p>If your water purification system stops working, we understand the urgency. We provide:</p>
+                        <ul>
+                            <li><strong>24/7 Emergency Hotline:</strong> Call us anytime for urgent issues</li>
+                            <li><strong>Same-Day Service:</strong> Emergency repairs available in most cases</li>
+                            <li><strong>Quick Diagnostics:</strong> Phone support to troubleshoot issues</li>
+                            <li><strong>Emergency Filter Replacement:</strong> Temporary solutions available</li>
+                            <li><strong>Expert Technicians:</strong> Certified professionals available around the clock</li>
+                        </ul>
+                        <p><strong>Emergency Service Rates:</strong></p>
+                        <ul>
+                            <li>After-hours service: Standard rate + $50 emergency fee</li>
+                            <li>Weekend/Holiday service: Standard rate + $75 emergency fee</li>
+                            <li>Warranty customers: Emergency diagnostics covered</li>
+                        </ul>
+                        <p>Contact us immediately at our emergency hotline for assistance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">
+                    <span>What brands do you carry?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        <p>We proudly carry a wide selection of trusted water purification brands:</p>
+                        <ul>
+                            <li><strong>Premium Brands:</strong> Aqua-Pure, Culligan, Pentair</li>
+                            <li><strong>Whole-House Systems:</strong> iSpring, Springwell, GE</li>
+                            <li><strong>Under-Sink Systems:</strong> APEC, NU Aqua, Home Master</li>
+                            <li><strong>Countertop Filters:</strong> Brita, PUR, TAPP</li>
+                            <li><strong>Specialized Systems:</strong> AquaBliss, ZeroWater, AquaTru</li>
+                        </ul>
+                        <p><strong>Why Choose Our Brands:</strong></p>
+                        <ul>
+                            <li>All products are certified and tested</li>
+                            <li>Competitive pricing and exclusive deals</li>
+                            <li>Complete product warranty coverage</li>
+                            <li>Expert support and after-sales service</li>
+                            <li>Regular new product additions</li>
+                        </ul>
+                        <p>We also offer custom system solutions tailored to your water quality analysis. Let our experts help you choose the best system for your needs.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="accordion-item">
+                <button class="accordion-button" onclick="toggleAccordion(this)">
+                    <span>How to maintain water purification system?</span>
+                    <span class="accordion-icon">▼</span>
+                </button>
+                <div class="accordion-content">
+                    <div class="accordion-text">
+                        <p>Proper maintenance ensures your system runs efficiently and provides clean water. Follow these guidelines:</p>
+                        <p><strong>Regular Maintenance Tasks:</strong></p>
+                        <ul>
+                            <li><strong>Monthly:</strong> Clean the exterior and check for leaks</li>
+                            <li><strong>Every 3 months:</strong> Check filter condition and water quality</li>
+                            <li><strong>Every 6-12 months:</strong> Replace filters according to manufacturer schedule</li>
+                            <li><strong>Annually:</strong> Professional inspection and system flush</li>
+                        </ul>
+                        <p><strong>Step-by-Step Maintenance Guide:</strong></p>
+                        <ul>
+                            <li>Turn off the main water supply before any maintenance</li>
+                            <li>Release pressure from the system if applicable</li>
+                            <li>Follow the filter replacement procedure in your manual</li>
+                            <li>Flush the system after filter replacement</li>
+                            <li>Keep a maintenance log with dates and changes</li>
+                            <li>Store replacement filters in a cool, dry place</li>
+                        </ul>
+                        <p><strong>Professional Maintenance:</strong></p>
+                        <ul>
+                            <li>We offer annual maintenance packages</li>
+                            <li>Includes inspection, cleaning, and minor repairs</li>
+                            <li>Warranty customers receive discounted maintenance</li>
+                        </ul>
+                        <p>Contact us to schedule a professional maintenance visit or for detailed maintenance training on your specific system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Osmangazi Suarıtma. All rights reserved.</p>
+        <p>For more information, visit our website or contact us directly.</p>
+        <p>Email: info@osmangazi-suaritma.com | Phone: Available during business hours</p>
+    </footer>
+
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <script>
+        function toggleAccordion(button) {
+            const item = button.parentElement;
+            const isActive = item.classList.contains('active');
+
+            // Close all accordion items
+            document.querySelectorAll('.accordion-item.active').forEach(activeItem => {
+                activeItem.classList.remove('active');
+            });
+
+            // Open clicked item if it wasn't active
+            if (!isActive) {
+                item.classList.add('active');
+            }
+        }
+
+        // Show/hide back-to-top button
+        window.addEventListener('scroll', function() {
+            const backToTop = document.querySelector('.back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+
+        // Close accordion when clicking outside
+        document.addEventListener('click', function(event) {
+            const isClickInsideAccordion = event.target.closest('.accordion-button');
+            if (!isClickInsideAccordion) {
+                // Optionally, you could close all accordions here
+                // Uncomment the next two lines if you want this behavior
+                // document.querySelectorAll('.accordion-item.active').forEach(item => {
+                //     item.classList.remove('active');
+                // });
+            }
+        });
+    </script>
+</body>
+</html>
