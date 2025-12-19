@@ -1,0 +1,59 @@
+# robots.txt for osmangazi-suaritma-website
+# Rules for search engine crawlers
+
+# Allow all user agents by default
+User-agent: *
+Allow: /
+
+# Disallow crawling of sensitive directories
+Disallow: /admin/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /logs/
+
+# Disallow crawling of common non-essential pages
+Disallow: /search*
+Disallow: /*?*
+Disallow: /*.pdf$
+Disallow: /*.zip$
+
+# Allow crawling of static assets
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.ico$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+
+# Crawl delay to be respectful to server resources
+Crawl-delay: 1
+
+# Reference to sitemap
+Sitemap: https://osmangazi-suaritma-website.com/sitemap.xml
+
+# Specific rules for major search engines (optional - adjust as needed)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
